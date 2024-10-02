@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"; 
+import Counter from "./Counter";
+import MensajeClick from "./MensajeClick";
+import settings from "./settings";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App1(){
+    return (
+        <div>
+            <Counter/>
+        </div>
+    );
 }
+export default App1; 
 
-export default App;
+function App2(){
+    return (
+        <div>
+            <MensajeClick/>
+        </div>
+    );
+}
+//export default App2; 
+
+function App3(){
+    return (
+        <div>
+            <settings/>
+        </div>
+    );
+}
+//export default App3; 
